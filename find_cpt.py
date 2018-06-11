@@ -66,7 +66,10 @@ class cpt:
             s1 = np.asarray([np.sum((data[0:i]-np.mean(data[0:i]))**2) for i in range(1,n)])
             s2 = np.asarray([np.sum((data[i:]-np.mean(data[i:]))**2) for i in range(1,n)])
             R  = s0-s1-s2
-            G  = np.max(R)
+            try: 
+                G  = np.max(R)
+            except ValueError:  #raised if `R` is empty.
+                return -1
             taustar = int(np.where(R==G)[0][0]) + 1
             sd1 = np.std(data[0:taustar-1])
             sd2 = np.std(data[taustar-1:])
@@ -91,10 +94,10 @@ class cpt:
         if teststat > criterion:
             # print("-->H0 rejected")
             # print("Changepoint detected at position: %d"%tau)
-            m1 = np.mean(data[0:tau])
-            std1 = np.std(data[0:tau])
-            m2 = np.mean(data[tau:])
-            std2 = np.std(data[tau:])
+            # m1 = np.mean(data[0:tau])
+            # std1 = np.std(data[0:tau])
+            # m2 = np.mean(data[tau:])
+            # std2 = np.std(data[tau:])
             # if "mean" in self.type:
             #     print("m1 = %f"%m1)
             #     print("m2 = %f"%m2)
