@@ -1,6 +1,6 @@
 *data*
-paper
-__pycache__
+*paper*
+_*
+.ipynb_checkpoints
 *.csv
 
-.*
