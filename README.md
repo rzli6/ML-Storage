@@ -114,5 +114,7 @@ This folder contains the weekly reports in PDF format for convenient to be shown
 ## Acknowledgments
 
 * Find CPT
+
   https://medium.com/bigdatarepublic/contextual-changepoint-detection-with-python-and-r-using-rpy2-fa7d86259ba9
+
 * Thanks for the help of my instructive Professor Patrick P. C. Lee and his PhD student Shujie Han.
