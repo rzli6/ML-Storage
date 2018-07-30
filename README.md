@@ -42,7 +42,7 @@ This folder contains all the Backblaze data pre-downloaded from the website. It 
 
   1. atc18
     
-    Containing the data of 2017 fouth quarter (from 2017-10-01 to 2017-12-31) 
+    Containing the data of 2017 fourth quarter (from 2017-10-01 to 2017-12-31) 
     
   2. data-2014 
     
